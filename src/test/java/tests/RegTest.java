@@ -11,7 +11,7 @@ public class RegTest {
     @Test
     void checkReqLogin() {
         String body = "{ \"email\": \"eve.holt@reqres.in\"," +
-                              "\"password\": \"cityslicka\" }";
+                "\"password\": \"cityslicka\" }";
 
         given()
                 .log().body()
@@ -24,6 +24,7 @@ public class RegTest {
                 .statusCode(200)
                 .body("token", is("QpwL5tke4Pnpja7X4"));
     }
+
     @Test
     void checkReqLoginMissingPass() {
         String body = "{ \"email\": \"eve.holt@reqres.in\"}";
