@@ -1,0 +1,6 @@
+curl -X POST
+     -H 'Content-Type: application/json'
+     -d '{"chat_id": "-1001645979194", "text": "Im a hackerman", "disable_notification": false}'
+     https://api.telegram.org/bot5705757584:AAF-VLsdW5TVUdywj2BJzjYlHPX5z0wGEF0/sendMessage
+
+java  "-DconfigFile=notifications/telegram.json" -jar allure-notifications-4.2.1.jar
